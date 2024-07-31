@@ -3,8 +3,7 @@ const nextConfig = {
     experimental: {
         appDir: true,
     },
-    output: "export",
-    basePath: "portfolio",
+    output: "export", 
     images: {
         unoptimized: true,
     },

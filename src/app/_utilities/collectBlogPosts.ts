@@ -11,7 +11,7 @@ export default function collectBlogPosts(): BlogPost[] {
         const postPath = path.join(process.cwd(), 'src', 'app', '_content', 'posts', post.body);
         const fileContents = fs.readFileSync(postPath, 'utf8');
 
-        const imagePath = `portfolio/images/${post.image}`;
+        const imagePath = `/images/${post.image}`;
         
         return {
             title: post.title,
