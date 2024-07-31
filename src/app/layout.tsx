@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   	return (
 		<html lang="en">
-	  		<Navbar />
-	  		<body className={`{workSans.className}`}>{children}</body>
+	  		<body className={`{workSans.className} text-black`}>
+				<Navbar />
+				{children}
+			</body>
 		</html>
   	);
 }
