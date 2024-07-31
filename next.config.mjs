@@ -4,6 +4,7 @@ const nextConfig = {
         appDir: true,
     },
     output: "export",
+    basePath: "portfolio",
     images: {
         unoptimized: true,
     },
