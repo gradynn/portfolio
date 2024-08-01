@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { FiMenu, FiX } from "react-icons/fi";
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-function MobileMenu({ onClose }) {
+function MobileMenu({ onClose }: { onClose: () => void }) {
     return (
         <div className="absolute inset-0 w-screen h-screen bg-white z-50">
             <div className="flex justify-end px-10 py-5">
@@ -31,7 +31,7 @@ function FullMenu() {
 }
 
 export default function Navbar() {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
     return (
         <div className="flex justify-between items-center px-10 py-5 w-full bg-white">
