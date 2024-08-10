@@ -2,9 +2,11 @@ import Image from "next/image";
 
 import SocialIcons from "@/app/_components/SocialIcons";
 import SectionHeading from "@/app/_components/Headings/SectionHeading";
-import Carousel from "@/app/_components/Carousel";
+import SkillsCarousel from "@/app/_components/SkillsCarousel";
 
 export default function About() {
+	const iconStyles = "text-[100px] p-5";
+
   	return (
 		<main className="flex flex-col w-full">
 			<section id="bio" className="flex flex-col lg:flex-row w-full justify-between p-10">
@@ -25,7 +27,7 @@ export default function About() {
 			</section>
 			<section id="skills" className="flex flex-col w-full justify-between p-10">
 				<SectionHeading value="Skills" />
-				<Carousel numToShow={10} />
+				<SkillsCarousel />
 			</section>
 			<section id="education" className="flex flex-col w-full justify-between p-10">
 				<SectionHeading value="Education" />
