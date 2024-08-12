@@ -10,7 +10,7 @@ import EducationEntry from "@/app/_components/EducationEntry";
 export default function About() {
 	const iconStyles = "text-[100px] p-5";
 
-  	return (
+  return (
 		<main className="flex flex-col w-full">
 			<section id="bio" className="flex flex-col lg:flex-row w-full justify-between p-10">
 				<div className="flex justify-center items-center w-full">
