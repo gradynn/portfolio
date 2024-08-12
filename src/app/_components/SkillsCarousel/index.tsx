@@ -5,7 +5,6 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import SkillBadge from "../SkillBadge";
 import { FaJava } from "react-icons/fa";
-import Legend from "./Legend";
 
 const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => {
   return (
@@ -83,7 +82,6 @@ function SkillsCarousel() {
                 <SkillBadge color="#1a533a" icon={<SiDjango className={iconStyles} />} professionalExperience={false} />
                 <SkillBadge color="#56ad49" icon={<SiMongodb className={iconStyles} />} professionalExperience={false} />
             </Carousel>
-            <Legend />
         </div>
     )
 }
