@@ -18,7 +18,8 @@
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-markdown": "^9.0.1",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/animejs": "^3.1.12",
