@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FiMenu, FiX } from "react-icons/fi";
 import React, { useState } from 'react';
 
-function MobileMenu({ onClose, activePage, setActivePage }: { onClose: () => void, activePage: string,  setActivePage: () => void  }) {
+function MobileMenu({ onClose, activePage, setActivePage }: { onClose: () => void, activePage: string,  setActivePage: (page: string) => void  }) {
     const handleClick = (p: string) => {
         setActivePage(p);
         onClose();
@@ -49,7 +49,7 @@ function MobileMenu({ onClose, activePage, setActivePage }: { onClose: () => voi
     )
 }
 
-function FullMenu({ activePage, setActivePage }: { activePage: string, setActivePage: () => void }) {
+function FullMenu({ activePage, setActivePage }: { activePage: string, setActivePage: (page: string) => void }) {
     const handleClick = (p: string) => {
         setActivePage(p);
     }
