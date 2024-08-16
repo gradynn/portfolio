@@ -1,4 +1,4 @@
-import { SiVercel, SiDatadog, SiNotion, SiSentry, SiFigma, SiAmazonaws, SiJira, SiSlack, SiGit, SiGithub } from 'react-icons/si';
+import { SiVercel, SiDatadog, SiNotion, SiSentry, SiFigma, SiAmazon, SiJira, SiSlack, SiGit, SiGithub } from 'react-icons/si';
 
 import SubsectionHeading from "../Headings/SubsectionHeading";
 import SkillBadge from "../SkillBadge";
@@ -9,7 +9,7 @@ function SkillsGrid() {
             <div>
                 <SubsectionHeading value="Infrastructure" />
                 <div className="flex flex-wrap">
-                    <SkillBadge color="#ff9900" icon={<SiAmazonaws className="text-5xl text-white" />} professionalExperience={true} />
+                    <SkillBadge color="#ff9900" icon={<SiAmazon className="text-5xl text-white" />} professionalExperience={true} />
                     <SkillBadge color="#000000" icon={<SiVercel className="text-5xl text-white" />} professionalExperience={true} />
                 </div>
             </div>

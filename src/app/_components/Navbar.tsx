@@ -19,28 +19,28 @@ function MobileMenu({ onClose, activePage, setActivePage }: { onClose: () => voi
                 <Link 
                     onClick={() => handleClick("")} 
                     href="/" 
-                    className={`text-4xl py-5 ${activePage == "" ? "text-blue-500" : ""}`}
+                    className={`text-4xl py-5 ${activePage == "" ? "text-blue-900" : ""}`}
                 >
                     Home
                 </Link> 
                 <Link 
                     onClick={() => handleClick("About")}
                     href="/about/"
-                    className={`text-4xl py-5 ${activePage == "About" ? "text-blue-500" : ""}`}
+                    className={`text-4xl py-5 ${activePage == "About" ? "text-blue-900" : ""}`}
                 >
                     About
                 </Link>
                 <Link 
                     onClick={() => handleClick("Blog")}
                     href="/blog/" 
-                    className={`text-4xl py-5 ${activePage == "Blog" ? "text-blue-500" : ""}`}
+                    className={`text-4xl py-5 ${activePage == "Blog" ? "text-blue-900" : ""}`}
                 >
                     Blog
                 </Link>
                 <Link 
                     onClick={() => handleClick("Contact")}
                     href="/contact/"
-                    className={`text-4xl py-5 ${activePage == "Contact" ? "text-blue-500" : ""}`}
+                    className={`text-4xl py-5 ${activePage == "Contact" ? "text-blue-900" : ""}`}
                 >
                     Contact
                 </Link>
@@ -59,21 +59,21 @@ function FullMenu({ activePage, setActivePage }: { activePage: string, setActive
             <Link 
                 onClick={() => handleClick("About")}
                 href="/about/"
-                className={`text-base pr-5 ${activePage == "About" ? "text-blue-500" : ""}`}
+                className={`text-base pr-5 ${activePage == "About" ? "text-blue-900" : ""}`}
             >
                 About
             </Link>
             <Link 
                 onClick={() => handleClick("Blog")}
                 href="/blog/" 
-                className={`text-base px-5 ${activePage == "Blog" ? "text-blue-500" : ""}`}
+                className={`text-base px-5 ${activePage == "Blog" ? "text-blue-900" : ""}`}
             >
                 Blog
             </Link>
             <Link 
                 onClick={() => handleClick("Contact")}
                 href="/contact/"
-                className={`text-base pl-5 ${activePage == "Contact" ? "text-blue-500" : ""}`}
+                className={`text-base pl-5 ${activePage == "Contact" ? "text-blue-900" : ""}`}
             >
                 Contact
             </Link>

@@ -1,6 +1,13 @@
 export interface BlogPost {
+    slug: string,
     title: string,
     date: Date,
-    bodyMarkdown: string,
-    imageRef: string
+    imageRef: string,
+    description: string,
+}
+
+export interface BlogPostContent {
+    title: string,
+    description: string,
+    content: string,
 }
