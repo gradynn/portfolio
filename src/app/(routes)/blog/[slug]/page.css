@@ -1,0 +1,138 @@
+/* General markdown styling */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+.markdown-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    color: #333; /* Medium typically uses a dark grey for text */
+    line-height: 1.8; /* Comfortable line height for readability */
+    font-size: 1.125rem; /* Medium font size */
+    margin: 0 auto; /* Center the content */
+    max-width: 680px; /* Max width similar to Medium's layout */
+}
+
+/* Add spacing between elements */
+.markdown-body > * {
+    margin-bottom: 0.5rem; /* Consistent spacing for all elements */
+    margin-top: 0.5rem;
+}
+
+/* Headings */
+.markdown-body h1 {
+    font-size: 1.5rem; /* Adjusted font size for prominence */
+    font-weight: 600; /* Medium weight for a balance between bold and regular */
+    line-height: 1.3; /* Slightly tighter line height */
+    color: #111; /* Darker color for headings */
+    margin-bottom: 1rem; /* Add space below headings */
+}
+
+/* Text */
+.markdown-body p {
+    color: #333; /* Default text color */
+}
+
+/* Images */
+.markdown-body img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove the bottom margin/whitespace often associated with inline images */
+    margin: 1.5rem auto; /* Center the image and add vertical spacing */
+    border-radius: 8px; /* Add subtle rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Medium-like shadow for depth */
+}
+
+/* General table styling */
+.markdown-body table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove gaps between borders */
+    border: 1px solid #ddd; /* Add a light border around the table */
+    font-size: 1rem; /* Slightly smaller font size */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Header styling */
+.markdown-body th {
+    background-color: #f5f5f5; /* Light background for headers */
+    color: #333; /* Darker text for contrast */
+    font-weight: 600; /* Medium weight for headers */
+    text-align: left; /* Align text to the left */
+    padding: 12px 15px; /* Padding inside the header cells */
+    border-bottom: 2px solid #ddd; /* Solid bottom border */
+}
+
+/* Body cell styling */
+.markdown-body td {
+    padding: 12px 15px; /* Padding inside the body cells */
+    border-bottom: 1px solid #ddd; /* Lighter bottom border for cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Alternating row colors */
+.markdown-body tr:nth-child(even) {
+    background-color: #fafafa; /* Light grey background for even rows */
+}
+
+.markdown-body tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+/* Code Blocks */
+.markdown-body pre {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 1rem; /* Add padding around the code block */
+    border-radius: 8px; /* Rounded corners */
+    overflow-x: auto; /* Ensure long lines are scrollable */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 1rem; /* Slightly larger font size */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #333; /* Dark text color */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+/* Inline code */
+.markdown-body code {
+    background-color: #f4f4f4; /* Match background with pre */
+    padding: 0.2rem 0.4rem; /* Smaller padding for inline code */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    color: #c7254e; /* Red color to stand out, similar to Medium */
+}
+
+/* Optional: Different background color for inline code inside pre */
+.markdown-body pre code {
+    background-color: transparent; /* Keep transparent inside pre */
+    padding: 0; /* Remove padding for code inside pre */
+}
+
+/* Lists */
+.markdown-body ul,
+.markdown-body ol {
+    padding-left: 1.5rem; /* Indent the lists */
+    line-height: 1.8; /* Match line height with the rest of the text */
+}
+
+/* Unordered list styling */
+.markdown-body ul {
+    list-style-type: disc; /* Standard bullet points */
+}
+
+.markdown-body ul ul {
+    list-style-type: circle; /* Nested bullet points style */
+}
+
+/* Ordered list styling */
+.markdown-body ol {
+    list-style-type: decimal; /* Standard numbered list */
+}
+
+.markdown-body ol ol {
+    list-style-type: lower-alpha; /* Nested numbered list style */
+}
+
+/* List item styling */
+.markdown-body li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}

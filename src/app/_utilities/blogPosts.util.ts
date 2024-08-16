@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { marked } from 'marked';
+import { remark } from 'remark';
+import html from 'remark-html';
+import gfm from 'remark-gfm';
 
 import rawPosts from '@/app/_content/index.json';
 import { BlogPost, BlogPostContent } from '../_entities/BlogPost';
@@ -28,18 +30,16 @@ export const collectPostContentFromSlug = async (slug: string) => {
 
     // Path to the markdown file
     const markdownFilePath = path.join(process.cwd(), 'src', 'app', '_content', 'posts', post.body);
-
-    // Read the markdown file
-    const markdownContent = fs.readFileSync(markdownFilePath, 'utf-8');
-
-    // Convert markdown to HTML
-    const htmlContent = await marked(markdownContent);
+    const fileContents = fs.readFileSync(markdownFilePath, 'utf8');
+    
+    const processedContents = await remark().use(gfm).use(html).process(fileContents);
+    const content = processedContents.toString();
 
     return {
         title: post.title,
         description: post.description,
         date: post.date,
-        content: htmlContent
+        content,
     } as BlogPostContent;
 };
 

@@ -1,3 +1,4 @@
+
 export interface BlogPost {
     slug: string,
     title: string,
@@ -9,5 +10,6 @@ export interface BlogPost {
 export interface BlogPostContent {
     title: string,
     description: string,
+    date: string,
     content: string,
 }
